@@ -1,6 +1,6 @@
 {
   "name": "scrapegoat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fetches calendar/event objects from a CalDav server",
   "main": "lib/index.js",
   "engines": {
@@ -25,7 +25,7 @@
     "test": "mocha --recursive -R spec --reporter dot",
     "test-watch": "npm test -- --watch",
     "posttest": "npm run lint",
-    "lint": "eslint lib test --fix",
+    "lint": "eslint lib test",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
     "release": "standard-version"
   },

@@ -1,6 +1,6 @@
 # scrapegoat
 
-[![Build Status](https://travis-ci.org/peerigon/scrapegoat.svg?branch=develop)](https://travis-ci.org/peerigon/scrapegoat)
+[![Build Status](https://travis-ci.com/peerigon/scrapegoat.svg?branch=master)](https://travis-ci.com/peerigon/scrapegoat)
 [![Dependency Status](https://david-dm.org/peerigon/scrapegoat.svg)](https://david-dm.org/peerigon/scrapegoat)
 
 This library requests a calendar object and its events provided by a CalDav server.
@@ -29,20 +29,6 @@ config = {
     },
     uri: "http://example.com/cal.php/calendars/<user name>/<calendar name>",
     timeout: 20000
-};
-```
-
-If the request fails with a `401 Unauthorized` you might need to send the authentication headers preemptive.
-This can be done by setting the `auth.sendImmediately` config property to `true`.
-
-```javascript
-config = {
-    auth: {
-        user: "username",
-        pass: "password",
-        sendImmediately: true
-    },
-    uri: "http://example.com/cal.php/calendars/<user name>/<calendar name>"
 };
 ```
 
